@@ -3,11 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="HomePageTest"/>
-      <class name="LoginPageTest"/>
-      <class name="BaseTest"/>
-      <class name="UserHomePageTest"/>
-      <class name="HelpPageTest"/>
+      <class name="dev.aichemy.ReactBankExample"/>		  
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -3,6 +3,28 @@
   <groupId>ReactBank</groupId>
   <artifactId>ReactBank</artifactId>
   <version>0.1-SNAPSHOT</version>
+  
+  <!-- Use this if for some reason you want to deploy this via mvn deploy: 
+   <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>a0sktjkztx4pi-artifactory-primary-0-releases</name>
+            <url>https://aichemy.jfrog.io/artifactory/aichemy</url>
+            <layout>default</layout>
+        </repository>
+   </distributionManagement>
+  -->
+  
+  <!-- Add this repository to access TestGold jars, later this be in MVN central -->
+  <repositories>
+    <repository>
+        <id>central</id>
+        <name>a0sktjkztx4pi-artifactory-primary-0-releases</name>
+        <url>https://aichemy.jfrog.io/artifactory/aichemy</url>
+    </repository>
+  </repositories>
+  
+
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
@@ -70,12 +92,15 @@
     </plugins>
   </build>
   <dependencies>
-  	<dependency>
-  		<groupId>org.seleniumhq.selenium</groupId>
-  		<artifactId>selenium-server</artifactId>
-  		<version>3.141.0</version>
-  	</dependency>
-  <dependency>
+
+<!-- Instead of the selenium dependency, change it to testgold like below -->
+<dependency>
+    <groupId>org.aichemy</groupId>
+    <artifactId>testgold</artifactId>
+    <version>1.0.0</version>
+</dependency>
+
+<dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>6.13.1</version>
@@ -88,10 +113,11 @@
   	
 </dependency>
 <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+
 <dependency>
     <groupId>log4j</groupId>
     <artifactId>log4j</artifactId>
     <version>1.2.17</version>
-</dependency>
+</dependency> 
 </dependencies>
 </project>
