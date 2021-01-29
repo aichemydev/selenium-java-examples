@@ -7,10 +7,11 @@ The Test Gold Product allows you to submit a Java selenium jar.
 2. Make code changes to the site
 3. It heals your Selenium JAR to work on the new site
 
-Under reactbank/page_object_model_tests, you can see java page object model tests built via test NG.
+Example is now with mvn:
 
-1. To build an old site jar, run build_old_selenium_jar.sh, the jar will be built in ./build/libs/ReactBank-test-all-0.1-SNAPSHOT.jar
-2. To build the new site jar, run build_new_selenium_jar.sh, the jar will be built in ./build/libs/ReactBank-test-all-0.1-SNAPSHOT.jar
+1. cd reactbank
+2. export your TG_TOKEN, e.g. export TG_TOKEN='eyJ3YWxTZ..' , get an account from nocode.testgold.dev if you dont have an account. Note that for new users, you have to wait up to 24 hours before you are manually activated. This is a measure to guard against hackers.
+3. ./test_original_app.sh to test the original site
+4. ./test_modified_app.sh to test the modified site, you will see testgold healing
 
-NOTE:
-The only difference between the new site and the old site jars is that it is pointing to a different website in the properties file, https://demo1.testgold.dev (old site) or https://demo2.testgold.dev (new site)
+You can use this pom.xml in your projects, note that you need to add org.aichemy.testgold as a dependency, and add in a new repository, check the pom file for more details.
