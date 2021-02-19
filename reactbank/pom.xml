@@ -18,7 +18,12 @@
   <!-- Add this repository to access TestGold jars, later this be in MVN central -->
   <repositories>
     <repository>
-        <id>central</id>
+            <id>Default</id>
+            <name>All apart from testgold</name>
+            <url>https://repo.maven.apache.org/maven2/</url>
+    </repository>
+    <repository>
+        <id>testgold</id>
         <name>a0sktjkztx4pi-artifactory-primary-0-releases</name>
         <url>https://aichemy.jfrog.io/artifactory/aichemy</url>
     </repository>
