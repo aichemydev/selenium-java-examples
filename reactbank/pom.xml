@@ -24,8 +24,8 @@
     </repository>
     <repository>
         <id>testgold</id>
-        <name>a0sktjkztx4pi-artifactory-primary-0-releases</name>
-        <url>https://aichemy.jfrog.io/artifactory/aichemy</url>
+        <name>testgold</name>
+	<url>https://sonatype.testgold.dev/repository/maven-releases/</url>
     </repository>
   </repositories>
   
