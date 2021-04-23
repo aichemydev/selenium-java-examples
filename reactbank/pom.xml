@@ -102,7 +102,7 @@
 <dependency>
     <groupId>org.aichemy</groupId>
     <artifactId>testgold</artifactId>
-    <version>1.0.0</version>
+    <version>3.141.59</version>
 </dependency>
 
 <dependency>
