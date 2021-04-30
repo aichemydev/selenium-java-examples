@@ -75,6 +75,18 @@ public class ReactBankExample {
 
     TimeUnit.SECONDS.sleep(timeoutSec);
 
+    /* Click on the submit button  */
+
+    System.out.println("[TEST] testing wrong xpath");
+    try {
+      WebElement testxpath = driver.findElement(By.xpath("//div[@class=‘busy-indicator-backdrop’]"));
+    }
+    catch(Exception e) {
+      System.out.println("[TEST] xpath does not exist");
+    }
+
+    TimeUnit.SECONDS.sleep(timeoutSec);
+
     /* Fill in the email address and password  */
 
     System.out.println("[TEST] finding the login email box and filling it in");
