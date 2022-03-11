@@ -49,7 +49,7 @@ Finally, you can run the Selenium Java examples:
 - Navigate to where you have stored these Java examples by using `cd`, for example: `cd ~/Github/selenium-java-examples`.
 - Type: `mvn -version` to verify it is working correctly.
 - Copy the value of `TG_TOKEN` on the TestGold Installations page and save it as an environment variable by typing: `$env:TG_TOKEN='your token goes here'`.
-- Set the following environment variable: `$env:REACTBANK_LANDING_URL='https://demo1.testgold.dev`.
+- Set the following environment variable: `$env:REACTBANK_LANDING_URL='https://demo1.testgold.dev'`.
 - Run the unmodified webapp example by using Maven to launch it: `mvn install`.
-- Set the following environment variable: `$env:REACTBANK_LANDING_URL='https://demo2.testgold.dev`.
+- Set the following environment variable: `$env:REACTBANK_LANDING_URL='https://demo2.testgold.dev'`.
 - Run the modified webapp example by using Maven to launch it: `mvn install`.
