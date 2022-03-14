@@ -44,6 +44,8 @@ Add a `MAVEN_HOME` environment variable and the path to the `mvn` binary to your
 - Click on the "New..." button under the "User variables for YOUR_USERNAME" box. Add the path to where you saved the Maven unzipped folder as the value of the `MAVEN_HOME` environment variable.
 - Select "Path" in the "User variables for YOUR_USERNAME" box and click on "Edit...". Click on "New" in the box that pops up. Then type: `%MAVEN_HOME%\bin` and hit Enter to add this item to your `Path` environment variable.
 
+Java Selenium JAR package
+
 - Download the Java Selenium JAR from the TestGold website and place it in the `reactbank/dependencies` folder.
 - Rename the `reactbank/pom.xml` file to `reactbank/pom.xml-backup`.
 - Rename the `reactbank/pom.xml-localdepjar` to `pom.xml`
