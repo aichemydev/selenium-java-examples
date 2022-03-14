@@ -23,7 +23,7 @@ You can use the downloaded TestGold Selenium JAR from the TestGold website's `In
 To do this:
 
 - Download the Selenium JAR from the TestGold website and place it in the `reactbank/dependencies` folder.
-- Rename the `reactbank/pom.xml` file to `reactbank/pom.xml-backup`.
+- Rename the `reactbank/pom.xml` file to `reactbank/backup.xml`.
 - Rename the `reactbank/pom.xml-localdepjar` to `pom.xml`
 - Make sure maven picks up the changes by running: `mvn clean` and then `mvn validate`.
 - Run the examples as directed.
