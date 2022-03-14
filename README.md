@@ -32,6 +32,7 @@ To do this:
 
 You will need a JDK and Maven. We recommend [Adoptium's Temurin distribution](https://adoptium.net/).
 
+- Download the Java JAR package in [Test Gold Interceptor packages](https://dev.k8s.testgold.dev/details/installation).
 - Download and install the JDK `.msi` file. Make sure that the "Set JAVA_HOME" option is checked when you install the package.
 - Download the binary distribution of Maven from the [Maven website](https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.zip).
 - Unzip this and copy the `maven-3.xx-bin` folder to a place on your `C:` drive (we recommend using a directory in `C:\Users\your-username`.).
@@ -42,6 +43,13 @@ Add a `MAVEN_HOME` environment variable and the path to the `mvn` binary to your
 - Click on "Environment Variables" in the dialog that comes up.
 - Click on the "New..." button under the "User variables for YOUR_USERNAME" box. Add the path to where you saved the Maven unzipped folder as the value of the `MAVEN_HOME` environment variable.
 - Select "Path" in the "User variables for YOUR_USERNAME" box and click on "Edit...". Click on "New" in the box that pops up. Then type: `%MAVEN_HOME%\bin` and hit Enter to add this item to your `Path` environment variable.
+
+- Download the Java Selenium JAR from the TestGold website and place it in the `reactbank/dependencies` folder.
+- Rename the `reactbank/pom.xml` file to `reactbank/pom.xml-backup`.
+- Rename the `reactbank/pom.xml-localdepjar` to `pom.xml`
+- Make sure maven picks up the changes by running: `mvn clean` and then `mvn validate`.
+- Run the examples as directed. 
+
 
 Finally, you can run the Selenium Java examples:
 
