@@ -63,3 +63,12 @@ Finally, you can run the Selenium Java examples:
 - Run the unmodified webapp example by using Maven to launch it: `mvn install`.
 - Set the following environment variable: `$env:REACTBANK_LANDING_URL='https://demo2.testgold.dev'`.
 - Run the modified webapp example by using Maven to launch it: `mvn install`.
+
+Or
+
+You can do this:
+
+1. cd reactbank
+2. export your TG_TOKEN, e.g. export TG_TOKEN='eyJ3YWxTZ..'
+3. ./test_original_app.bat to test the original site
+4. ./test_modified_app.bat to test the modified site, you will see testgold healing
