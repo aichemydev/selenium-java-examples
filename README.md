@@ -1,5 +1,7 @@
 # selenium-java-examples
 
+Java Selenium testing provides thorough and functioning test cases that can test every aspect of your application.
+
 Selenium Java example tests
 
 The Test Gold Product allows you to submit a Java selenium jar.
