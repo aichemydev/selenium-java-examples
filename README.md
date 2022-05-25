@@ -122,7 +122,7 @@ mvn validate
 
 Then, add the `TG_TOKEN` environment variable. Copy the token from the "Installations" tab of the TestGold webapp:
 
-![Installation token](./images/installation-token.png)
+![Installation token](./images/installation-token-unix.png)
 
 Then, set up the environment variable in PowerShell:
 
