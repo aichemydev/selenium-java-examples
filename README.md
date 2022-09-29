@@ -1,17 +1,17 @@
 # selenium-java-examples
 
 Java Selenium testing provides thorough and functioning test cases that can test every aspect of your application.
-The TestGold service generates robust selectors, heals broken selectors, and helps maintains your Java Selenium tests.
+The Wring service generates robust selectors, heals broken selectors, and helps maintains your Java Selenium tests.
 
 1. Run your tests using our enhanced Selenium, transparently replacing normal Selenium.
-2. TestGold learns from a previously working example of your test run on your webapp.
+2. Wring learns from a previously working example of your test run on your webapp.
 2. Make code changes to your webapp; this may break the selectors you were previously using.
 3. Run your tests again using our enhanced Selenium. Selectors that were broken will be healed and
    the test run will complete as expected.
 
-## Get the TestGold Selenium JAR
+## Get the Wring Selenium JAR
 
-To set up the example here, you will need to download a TestGold Selenium JAR from the TestGold webapp.
+To set up the example here, you will need to download a Wring Selenium JAR from the Wring webapp.
 Login to your account, then navigate to the "Installation" tab:
 
 ![Installation tab](./images/installation-tab.png)
@@ -41,7 +41,7 @@ Add a `MAVEN_HOME` environment variable and the path to the `mvn` binary to your
 
 We recommend using PowerShell for the examples. Click on the Start Menu, type `powershell` and hit Enter to launch the PowerShell console.
 
-Navigate to where you cloned this repository and make sure the TestGold Selenium JAR is present in the expected folder:
+Navigate to where you cloned this repository and make sure the Wring Selenium JAR is present in the expected folder:
 
 ![Repo folder](./images/windows-powershell.png)
 
@@ -58,7 +58,7 @@ mvn clean
 mvn validate
 ```
 
-Then, add the `TG_TOKEN` environment variable. Copy the token from the "Installations" tab of the TestGold webapp:
+Then, add the `TG_TOKEN` environment variable. Copy the token from the "Installations" tab of the Wring webapp:
 
 ![Installation token](./images/installation-token.png)
 
@@ -70,8 +70,8 @@ $env:TG_TOKEN='copied token goes here'
 
 Then, run the two examples provided as PowerShell batch files.
 
-1. Run `test_original_app.ps1` first. This simulates the TestGold service learning from a test run against your webapp in its original state.
-2. Run `test_modified_app.ps1` next. This runs the exact same Selenium test steps against a modified version of the same webapp. Some selectors are no longer valid in this version, so they will no longer work. The TestGold service detects these broken selectors and heals them automatically.
+1. Run `test_original_app.ps1` first. This simulates the Wring service learning from a test run against your webapp in its original state.
+2. Run `test_modified_app.ps1` next. This runs the exact same Selenium test steps against a modified version of the same webapp. Some selectors are no longer valid in this version, so they will no longer work. The Wring service detects these broken selectors and heals them automatically.
 
 ## Run the example on MacOS/Linux
 
@@ -103,7 +103,7 @@ should result in something like the following output:
 
 ### Run the example
 
-Navigate to where you cloned this repository and make sure the TestGold Selenium JAR is present in the expected folder:
+Navigate to where you cloned this repository and make sure the Wring Selenium JAR is present in the expected folder:
 
 ![Unix reactbank example](./images/unix-depcheck.png)
 
@@ -120,7 +120,7 @@ mvn clean
 mvn validate
 ```
 
-Then, add the `TG_TOKEN` environment variable. Copy the token from the "Installations" tab of the TestGold webapp:
+Then, add the `TG_TOKEN` environment variable. Copy the token from the "Installations" tab of the Wring webapp:
 
 ![Installation token](./images/installation-token-unix.png)
 
@@ -132,5 +132,5 @@ export TG_TOKEN='copied token goes here'
 
 Then, run the two examples provided as shell scripts.
 
-1. Run `test_original_app.sh` first. This simulates the TestGold service learning from a test run against your webapp in its original state.
-2. Run `test_modified_app.sh` next. This runs the exact same Selenium test steps against a modified version of the same webapp. Some selectors are no longer valid in this version, so they will no longer work. The TestGold service detects these broken selectors and heals them automatically.
+1. Run `test_original_app.sh` first. This simulates the Wring service learning from a test run against your webapp in its original state.
+2. Run `test_modified_app.sh` next. This runs the exact same Selenium test steps against a modified version of the same webapp. Some selectors are no longer valid in this version, so they will no longer work. The Wring service detects these broken selectors and heals them automatically.
